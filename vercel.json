@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "functions": {
+    "api/subconverter.js": {
+      "runtime": "nodejs18.x",
+      "maxDuration": 60,
+      "includeFiles": "subconverter/**"
+    }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/subconverter.js" }
+  ]
+}
